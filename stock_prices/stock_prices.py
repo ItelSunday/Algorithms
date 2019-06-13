@@ -1,9 +1,18 @@
 #!/usr/bin/python
 
 import argparse
+import math
 
 def find_max_profit(prices):
-  pass
+  profit= 0
+  # Find the maximum difference between smallest n largest price in list of prices.
+  # Max profit substracts price by another price that comes _before_ NOT after in the list of prices.
+  for i in range(len(prices) -1):
+    for j in range(i + len(prices)):
+      if prices[j] - prices[i] > profit:
+        profit = prices[j] - prices[i]
+      return profit
+    
 
 
 if __name__ == '__main__':
