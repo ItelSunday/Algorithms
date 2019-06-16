@@ -3,7 +3,18 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  pass 
+  batches = []
+  #Dictionary operation
+  #
+  if len(recipe) == len(ingredients):
+    for i in ingredients:
+      batches.append([ingredients[i] + recipe])
+      
+    else:
+      batches.append(0)
+      
+    return batches
+
 
 
 if __name__ == '__main__':
