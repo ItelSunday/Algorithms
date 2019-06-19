@@ -2,8 +2,10 @@
 
 import sys
 
+
 def rock_paper_scissors(n):
-  pass 
+  user = input("")
+   
 
 
 if __name__ == "__main__":
