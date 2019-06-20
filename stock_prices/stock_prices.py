@@ -4,6 +4,14 @@ import argparse
 import math
 
 def find_max_profit(prices):
+  max_profit = None
+  
+  for i in rage(0, len(prices)):
+    #subtract each price to each one up price
+    for j in rage(i+1, len(prices)):
+      
+    
+  
   #Find the maximum difference between smallest n largest price in list of prices.
   #Max profit substracts price by another price that comes _before_ NOT after in the list of prices.
 
