@@ -22,7 +22,7 @@ def find_max_profit(prices):
   #   for j in range(i + len(prices)):
   #     if prices[j] - prices[i] > profit:
   #       profit = prices[j] - prices[i]
-        
+  #      i+=1
   #     return profit
     
     #start at end of the array
